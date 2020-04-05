@@ -1,6 +1,6 @@
 // Visual Studio 2015
 //------------------------------------------------------------------------------
-.VS2015_BasePath        = '$_CURRENT_BFF_DIR_$/2015'
+.VS2015_BasePath        = 'C:\Program Files (x86)\Microsoft Visual Studio 14.0'
 
 // X64 Compiler
 //------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ Compiler( 'Compiler-VS2015-x64' )
                     '$Root$/mspdbcore.dll'
                     '$Root$/mspdbsrv.exe'
                     '$Root$/mspft140.dll'
-                    '$Root$/1033/clui.dll'
+                    '$Root$/2052/clui.dll'
                     '$VS2015_BasePath$/VC/redist/x64/Microsoft.VC140.CRT/msvcp140.dll'
                     '$VS2015_BasePath$/VC/redist/x64/Microsoft.VC140.CRT/vccorlib140.dll'
                     '$VS2015_BasePath$/VC/redist/x64/Microsoft.VC140.CRT/vcruntime140.dll'
@@ -35,7 +35,7 @@ Compiler( 'Compiler-VS2015-x64' )
 
     // Compiler
     .Compiler                       = 'Compiler-VS2015-X64'
-    .CommonCompilerOptions          = ' /Z7 /nologo /c /W4 /WX'
+    .CommonCompilerOptions          = ' /Z7 /nologo /c /W4 /WX-'
                                     + ' /Zc:inline'         // Remove unreferenced COMDATs at compile time (VS2013.2+)
                                     + ' /Zc:strictStrings'  // Require const only usage of string literals (VS2013+)
                                     + ' /fp:fast'

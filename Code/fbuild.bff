@@ -240,8 +240,8 @@ Settings
 //------------------------------------------------------------------------------
 .ProjectCommon =
 [
-    .ProjectBuildCommand        = 'cd ^$(SolutionDir)\..\..\Code\ &amp; fbuild -vs -dist -monitor -fastcancel -cache ^$(ProjectName)-^$(Configuration)'
-    .ProjectRebuildCommand      = 'cd ^$(SolutionDir)\..\..\Code\ &amp; fbuild -vs -dist -monitor -fastcancel -cache -clean ^$(ProjectName)-^$(Configuration)'
+    .ProjectBuildCommand        = 'cd ^$(SolutionDir)\..\..\Code\ &amp; fbuild -vs -monitor -fastcancel -cache ^$(ProjectName)-^$(Configuration)'
+    .ProjectRebuildCommand      = 'cd ^$(SolutionDir)\..\..\Code\ &amp; fbuild -vs -monitor -fastcancel -cache -clean ^$(ProjectName)-^$(Configuration)'
     .OutputDirectory            = '^$(SolutionDir)\Temp'
     .IntermediateDirectory      = '^$(SolutionDir)\Temp'
     .BuildLogFile               = '^$(SolutionDir)\Temp\^$(ProjectName)-^$(Configuration).log'

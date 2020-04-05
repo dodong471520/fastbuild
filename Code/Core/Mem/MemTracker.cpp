@@ -184,7 +184,7 @@
 
         if ( s_AllocationCount == 0 )
         {
-            OUTPUT( "DumpAllocations : No allocations\n" );
+            //OUTPUT( "DumpAllocations : No allocations\n" );
             return;
         }
 
